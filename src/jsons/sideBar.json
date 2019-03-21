@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "key": 1,
+      "type": "home",
+      "name": "首页"
+    },
+    {
+      "key": 2,
+      "type": "folder",
+      "name": "专题"
+    },
+    {
+      "key": 3,
+      "type": "tags",
+      "name": "标签"
+    },
+    {
+      "key": 4,
+      "type": "smile",
+      "name": "关于我"
+    },
+  ]
+}
