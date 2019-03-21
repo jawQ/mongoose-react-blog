@@ -37,32 +37,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## `后知后觉`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+1. 每个组件即使看似“没使用”React，但都必须导入Ta，是因为使用JSX语法了。Babel将JSX编译为ES5+时，将render的return里的标签元素编译为React.createElement，而createElement函数恰好就在React对象里。所以每个组件都需要导入React。
 
-### Analyzing the Bundle Size
+2. 组件名称必须以大写字母开头，否则react会认为是原生元素标签。
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+3. 函数组件和class组件的区别，class组件能够使用state。
